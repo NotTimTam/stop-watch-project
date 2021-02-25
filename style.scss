@@ -10,6 +10,11 @@
     font-family: seg, monospace;
 }
 
+html {
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+}
+
 .display {
     background-color: black;
     color: green;
