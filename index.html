@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="buttons">
+        <div class="button toggle" id="toggle">START·STOP</div>
+        <div class="button freezeframe" id="freezeframe">CLR</div>
+    </div>
+    <div class="display">
+        <div class="text" id="text">00:00</div>
+        <div class="text" id="format">HHH:MM:SS.MM</div>
+    </div>
+    <div class="laps">
+        
+    </div>
+
+    <div class="games">
+        <p class="menutext" toggled="false">
+            <span class="arrow">^</span> <span id="p">GAMES</span> <span class="arrow">^</span>
+        </p>
+        <div class="buttons">
+            <div class="button" id="game1">5 secs</div>
+            <div class="button" id="game2">quick</div>
+            <div class="button" id="game3">spd clk</div>
+        </div>
+    </div>
+    <div class="instructions"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+​
+    <script src="games.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
