@@ -90,7 +90,7 @@ $(function () {
             $("#text").css('font-size', '64px');
             let randNum = (Math.floor(Math.random() * 4) + 2) * 1000;
             console.log(randNum);
-            rand = setInterval(delayRand, randNum);
+            rand = setTimeout(delayRand, randNum);
         } else if (activeGame == 2 && run == true) {
             let totalTime = ((hour * 60 * 60) + (min * 60) + sec).toFixed(2);
             run = false;
@@ -122,7 +122,6 @@ $(function () {
     });
 
     function delayRand() {
-        window.clearInterval(rand);
         run = true;
     }
 });
